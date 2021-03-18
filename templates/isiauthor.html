@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    {# my css #}
+    <style>
+      section {
+        min-height: 250px;
+      }
+    </style>
+
+    {# my CSS #}
+  <link rel="stylesheet" type="text/css" href="/static/css/styleauthor.css">
+
+    <title>{{nama}}</title>
+  </head>
+  <body class="mt-5">
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+  <a class="navbar-brand" href="#">{{nama}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="Pelanggan">Pelanggan</a>
+      <a class="nav-item nav-link" href="Crew">Crew</a>
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center">
+    <img src="{{foto1}}" width="25%" class="rounded-circle img-thumbnail border-dark">
+    <h1 class="display-4">{{nama}}</h1>
+    <p class="lead">{{profesi}}.</p>
+  </div>
+</div>
+
+<section id="about" class="about">
+<div class="container">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h2>About</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-5 text-center">
+      <p>{{deskripsi0}}</p>
+    </div>
+    <div class="col-md-5 text-center">
+      <p>{{deskripsi1}}</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="portofolio" class="portofolio bg-muted pb-4">
+<div class="container">
+  <div class="row mb-4 pt-4">
+    <div class="col text-center">
+      <h2>Portfolio</h2>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto2}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi2}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto3}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi3}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto4}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi4}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto5}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi5}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto6}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi6}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="card">
+        <img class="card-img-top" src="{{foto7}}" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">{{deskripsi7}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="contact" class="contact mb-5">
+<div class="container">
+  <div class="row pt-4 mb-4">
+    <div class="col text-center">
+      <h2>Hubungi Kami</h2>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-4">
+      <div class="card text-white bg-danger mb-3">
+        <div class="card-body">
+          <h5 class="card-title text-center">Hubungi Kami</h5>
+          <p class="card-text">WA     : 082272152660</p>
+          <p class="card-text">Email  : Helpdesk@vibes.id</p>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item"><h1>Lokasi</h1></li>
+      <li class="list-group-item">Vibes Office</li>
+      <li class="list-group-item">Jl. Dipatiukur, Bandung</li>
+      <li class="list-group-item">West Java, Indonesia</li>
+    </ul>
+    </div> 
+
+    <div class="col-lg-6">
+      <form>
+        <div class="form-group">
+          <label for="Nama">Nama</label>
+          <input type="text" class="form-control" id="Nama">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="text" class="form-control" id="Email">
+        </div>
+        <div class="form-group">
+          <label for="Telp">No Telp</label>
+          <input type="text" class="form-control" id="Telp">
+        </div>
+        <div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" id="pesan" class="form-control"></textarea>
+          </div>
+        <div>
+          <div class="form-group">
+            <button type="button" class="btn btn-danger">Kirim Pesan!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</contact>
+</section>
+
+<footer class="bg-dark text-white navbar-expand-lg">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col pt-3">
+        <p>Copyright 2020.</p>
+      </div>   
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
